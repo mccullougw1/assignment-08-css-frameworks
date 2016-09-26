@@ -1,0 +1,211 @@
+@import "./imports/_normalize.scss";
+
+
+*{ box-sizing: border-box }
+img {
+   width: 100%;
+   display: block;
+}
+
+#app-container{
+   .container {
+      width: 100%;
+      text-align: center;
+      position: relative;
+   }
+   .absolute-center {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+   }
+
+   .my-header {
+      background: url(../images/roomies-eating-together-bg.jpg) center center no-repeat;
+      background-size: cover;
+      height: 500px;
+
+      h2 {
+         color: white;
+         margin-bottom: 20px;
+      }
+      h6 {
+         color: white;
+         margin-bottom: 15px;
+      }
+      .input-group {
+         .btn {
+            height: 34px;
+            background: #5DC2D2;
+         }
+      }
+   }
+
+   .room-for-rent {
+      background: #5DC2D2;
+      height: 300px;
+
+      .my-content {
+         color: white;
+         top: 35%;
+
+         button {
+            background: #334050;
+            border: none;
+            color: #fff;
+         }
+      }
+   }
+
+   .roommate-finder {
+      background: #F5F5F5;
+
+      h2 {
+         color: #5DC2D2;
+         margin-bottom: 10px;
+      }
+
+      p {
+         margin-bottom: 50px;
+      }
+
+      .three-step-process {
+         img {
+            width: 20%;
+            margin: auto;
+         }
+      }
+
+      .move-in {
+         border-top: 1px solid lightgrey;
+      }
+   }
+
+
+
+   .recommend-us {
+      background: url(../images/happy-roomies-bg.jpg) center center no-repeat;
+      background-size: cover;
+      height: 500px;
+
+      h3 {
+         color: white;
+      }
+      p {
+         color: white;
+      }
+      button {
+         height: 34px;
+         background: #334050;
+      }
+      h4 {
+         color: white;
+      }
+      .icons {
+         border-radius: 50%;
+         color: white;
+         background: #5DC2D2;
+         height: 20px;
+         width: 20px;
+      }
+      .stupid-triangle-icon-that-i-cant-find {
+         color: white;
+      }
+
+
+   }
+
+   .success-stories {
+      padding-bottom: 50px;
+
+      h3 {
+         color: #5DC2D2;
+         margin-bottom: 20px;
+      }
+      .special-p {
+         margin-bottom: 50px;
+      }
+
+      .our-success-stories {
+         padding-bottom: 20px;
+
+         h4 {
+            color: #5DC2D2;
+         }
+
+         img {
+            width: 20%;
+            margin: auto;
+         }
+      }
+   }
+
+   .featured-rooms {
+      background: #FECA48;
+      padding-bottom: 50px;
+
+      .my-featured {
+         width: 60%;
+      }
+      .each-feature {
+         margin-top: 25px;
+      }
+
+      p {
+         text-align: left;
+         padding-left: 20px;
+      }
+      .feature-image {
+         margin-bottom: 15px;
+      }
+      .user-image {
+         position: absolute;
+         top: 72.5%;
+         left: 80%;
+         border-radius: 50%;
+         height: 15%;
+         width: 15%;
+         border: 1px solid white;
+      }
+      .heart-icon {
+         position: absolute;
+         top: 10%;
+         left: 85%;
+         transform: translateX(-50%,-50%);
+         color: white;
+         font-size: 25px;
+      }
+      button {
+         background: #334050;
+         border: none;
+         color: #fff;
+      }
+   }
+
+   .my-footer {
+      background: #334050;
+      padding-top: 20px;
+
+      button {
+         color: white;
+      }
+      img {
+         width: 20%;
+         margin: auto;
+         margin-top: 20px;
+         margin-bottom: 20px;
+      }
+      .icons {
+         color: white;
+         border-radius: 50%;
+         border: 1px solid white;
+         height: 5%;
+         width: 5%;
+      }
+      p {
+         color: white;
+      }
+   }
+
+
+}
