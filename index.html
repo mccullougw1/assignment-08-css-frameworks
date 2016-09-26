@@ -15,6 +15,9 @@
             <div class="hamburger-icon absolute-center">
               <i class="fa fa-bars fa-2x"></i>
             </div>
+            <div class="desktop-navs absolute-center">
+               <button type="button" name="button">Register</button><button type="button" name="button">Login</button>
+            </div>
             <div class="container absolute-center">
                <h2>Living Together Made Easy</h2>
                <h6>Find your perfect roommate</h6>
@@ -22,7 +25,8 @@
                <div class="input-group search-bar">
                   <input type="text" class="form-control" placeholder="Where are you searching?">
                   <span class="input-group-btn">
-                    <button class="btn btn-default" type="button"><i class="fa fa-search" aria-hidden="true"></i></button>
+                    <button class="btn btn-default mobile-button" type="button"><i class="fa fa-search" aria-hidden="true"></i></button>
+                    <button class="btn btn-default desktop-button" type="button"><i class="fa fa-search" aria-hidden="true"></i><p>Search</p></button>
                   </span>
 
                 </div>
@@ -48,36 +52,38 @@
             </p>
 
 
-            <div class="container three-step-process">
-               <img src="./images/profile-guy-plus.svg"/>
-               <h4>Create a Profile</h4>
-               <p>
-                  Tell us about yourself and answer matching questions in a few simple steps.
-               </p>
+            <div class="row">
+
+               <div class="three-step-process col-xs-12 col-sm-4">
+                  <img src="./images/profile-guy-plus.svg"/>
+                  <h4>Create a Profile</h4>
+                  <p>
+                     Tell us about yourself and answer matching questions in a few simple steps.
+                  </p>
+               </div>
+
+               <div class="three-step-process col-xs-12 col-sm-4">
+                  <img src="./images/95-percent.svg"/>
+                  <h4>Match Smarter</h4>
+                  <p>
+                     See how good you match with your future roommates before meeting them in person.
+                  </p>
+               </div>
+
+               <div class="three-step-process col-xs-12 col-sm-4 move-in">
+                  <img src="./images/move-in-keys.svg"/>
+                  <h4>Move in</h4>
+                  <p>
+                     Message with your best matches, move in and enjoy your new home.
+                  </p>
+               </div>
+
             </div>
 
+            <p>
+               <a href="https://www.room.me/how-it-works">Find out how it works.</a>
+            </p>
 
-
-            <div class="container three-step-process">
-               <img src="./images/95-percent.svg"/>
-               <h4>Match Smarter</h4>
-               <p>
-                  See how good you match with your future roommates before meeting them in person.
-               </p>
-            </div>
-
-
-
-            <div class="container three-step-process move-in">
-               <img src="./images/move-in-keys.svg"/>
-               <h4>Move in</h4>
-               <p>
-                  Message with your best matches, move in and enjoy your new home.
-               </p>
-               <p>
-                  <a href="https://www.room.me/how-it-works">Find out how it works.</a>
-               </p>
-            </div>
          </div>
 
 
@@ -85,78 +91,94 @@
             <div class="container text-center">
                <h3>Recommend #roomdotme</h3>
                <p>Do you know someone looking for or renting out a room? Tell them about us.</p>
-               <h4>Share on</h4>
-               <div class="row">
-                  <div class="icon-holder cl-xs-4"><i class="fa fa-facebook icons absolute-center" aria-hidden="true"></i></div>
-                  <div class="icon-holder cl-xs-4"><i class="fa fa-google-plus icons absolute-center" aria-hidden="true"></i></div>
-                  <div class="icon-holder cl-xs-4"><i class="fa fa-twitter icons absolute-center" aria-hidden="true"></i></div>
-               </div>
-               <h4>or</h4>
-               <div class="input-group">
-                  <input type="text" class="form-control" placeholder="enter a friend's email address">
-                  <span class="input-group-btn">
-                    <button class="btn btn-default" type="button"><i class="fa fa-paper-plane-o stupid-triangle-icon-that-i-cant-find" aria-hidden="true"></i></button>
-                  </span>
+               <div class="running-out-of-names-for-things">
+                  <h4>Share on</h4>
+                  <div class="row icon-row">
+                     <div class="icon-holder"><i class="fa fa-facebook icons absolute-center" aria-hidden="true"></i></div>
+                     <div class="icon-holder"><i class="fa fa-google-plus icons absolute-center" aria-hidden="true"></i></div>
+                     <div class="icon-holder"><i class="fa fa-twitter icons absolute-center" aria-hidden="true"></i></div>
+                  </div>
+                  <h4>or</h4>
+                  <div class="input-group my-search-bar">
+                     <input type="text" class="form-control annoying-search-bar" placeholder="enter a friend's email address">
+                     <span class="input-group-btn">
+                       <button class="btn btn-default mobile-button" type="button"><i class="fa fa-paper-plane-o stupid-triangle-icon-that-i-cant-find" aria-hidden="true"></i></button>
+                       <button class="btn btn-default desktop-button" type="button"><i class="fa fa-paper-plane-o stupid-triangle-icon-that-i-cant-find" aria-hidden="true"></i>Send</button>
+                     </span>
 
+                   </div>
                 </div>
             </div>
          </div>
 
+         <div class="checkerboard-border">
+         </div>
+
+
          <div class="container success-stories">
             <h3>Success Stories</h3>
             <p class="special-p">See how other roomies have found their perfect matches</p>
+            <div class="row">
+               <div class="col-sm-4 our-success-stories">
+                  <img src="./images/success-jasmine.png"/>
+                  <h4>Jasmine</h4>
+                  <p>
+                     I trust room.me more than craigslist, for sure.
+                  </p>
+               </div>
 
-            <div class="container our-success-stories">
-               <img src="./images/success-jasmine.png"/>
-               <h4>Jasmine</h4>
-               <p>
-                  I trust room.me more than craigslist, for sure.
-               </p>
-            </div>
+               <div class="col-sm-4 our-success-stories">
+                  <img src="./images/success-kevyan.png"/>
+                  <h4>Kevyan</h4>
+                  <p>
+                     What makes room.me different is the criteria by which roommates are matched against.
+                  </p>
+               </div>
 
-            <div class="container our-success-stories">
-               <img src="./images/success-kevyan.png"/>
-               <h4>Kevyan</h4>
-               <p>
-                  What makes room.me different is the criteria by which roommates are matched against.
-               </p>
-            </div>
-
-            <div class="container our-success-stories">
-               <img src="./images/success-sophia.png"/>
-               <h4>Sophia</h4>
-               <p>
-                  room.me is so easy to navigate and its questionnaires are so helpful in finding the perfect match for me.
-               </p>
+               <div class="col-sm-4 our-success-stories">
+                  <img src="./images/success-sophia.png"/>
+                  <h4>Sophia</h4>
+                  <p>
+                     room.me is so easy to navigate and its questionnaires are so helpful in finding the perfect match for me.
+                  </p>
+               </div>
             </div>
          </div>
 
          <div class="container featured-rooms">
             <h3>Featured Rooms</h3>
             <div class="container my-featured">
-               <div class="container thumbnail each-feature">
-                  <img src="./images/featured-02.jpg" class="feature-image"/>
-                  <p>2 bedroom available in a 3 br/2..</p>
-                  <p>$2,200 | Oct 1, 2016</p>
-                  <img src="./images/featured-user-02.jpg" class="user-image"/>
-                  <i class="fa fa-heart-o heart-icon" aria-hidden="true"></i>
+
+               <div class="col-sm-4">
+                  <div class="container thumbnail each-feature">
+                     <img src="./images/featured-02.jpg" class="feature-image"/>
+                     <p>2 bedroom available in a 3 br/2..</p>
+                     <p>$2,200 | Oct 1, 2016</p>
+                     <img src="./images/featured-user-02.jpg" class="user-image"/>
+                     <i class="fa fa-heart-o heart-icon" aria-hidden="true"></i>
+                  </div>
                </div>
 
-               <div class="container thumbnail">
-                  <img src="./images/featured-03.jpg" class="feature-image"/>
-                  <p>2 bedroom available in a 3 br/2..</p>
-                  <p>$2,200 | Oct 1, 2016</p>
-                  <img src="./images/featured-user-03.jpg" class="user-image"/>
-                  <i class="fa fa-heart-o heart-icon" aria-hidden="true"></i>
+               <div class="col-sm-4">
+                  <div class="container thumbnail">
+                     <img src="./images/featured-03.jpg" class="feature-image"/>
+                     <p>2 bedroom available in a 3 br/2..</p>
+                     <p>$2,200 | Oct 1, 2016</p>
+                     <img src="./images/featured-user-03.jpg" class="user-image"/>
+                     <i class="fa fa-heart-o heart-icon" aria-hidden="true"></i>
+                  </div>
                </div>
 
-               <div class="container thumbnail">
-                  <img src="./images/featured-01.jpg" class="feature-image"/>
-                  <p>2 bedroom available in a 3 br/2..</p>
-                  <p>$2,200 | Oct 1, 2016</p>
-                  <img src="./images/featured-user-01.jpg" class="user-image"/>
-                  <i class="fa fa-heart-o heart-icon" aria-hidden="true"></i>
+               <div class="col-sm-4">
+                  <div class="container thumbnail">
+                     <img src="./images/featured-01.jpg" class="feature-image"/>
+                     <p>2 bedroom available in a 3 br/2..</p>
+                     <p>$2,200 | Oct 1, 2016</p>
+                     <img src="./images/featured-user-01.jpg" class="user-image"/>
+                     <i class="fa fa-heart-o heart-icon" aria-hidden="true"></i>
+                  </div>
                </div>
+
             </div>
             <button type="button" name="button" class="btn btn-default">See more rooms</button>
          </div>

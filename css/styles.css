@@ -371,168 +371,310 @@ img {
   width: 100%;
   display: block; }
 
-#app-container .container {
-  width: 100%;
-  text-align: center;
-  position: relative; }
-#app-container .absolute-center {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%); }
-#app-container .my-header {
-  background: url(../images/roomies-eating-together-bg.jpg) center center no-repeat;
-  background-size: cover;
-  height: 500px; }
-  #app-container .my-header .room-me-logo {
-    top: 5%;
-    left: 7%;
-    height: 70px;
-    width: 70px; }
-  #app-container .my-header .hamburger-icon {
-    top: 5%;
-    left: 95%;
-    color: white; }
-  #app-container .my-header h2 {
-    color: white;
-    margin-bottom: 20px; }
-  #app-container .my-header h6 {
-    color: white;
-    margin-bottom: 15px; }
-  #app-container .my-header .search-bar {
-    width: 80%;
-    margin: auto; }
-    #app-container .my-header .search-bar .btn {
+#app-container {
+  padding-left: 50px;
+  padding-right: 50px; }
+  #app-container .container {
+    width: 100%;
+    text-align: center;
+    position: relative; }
+  #app-container .absolute-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+  #app-container .my-header {
+    background: url(../images/roomies-eating-together-bg.jpg) center center no-repeat;
+    background-size: cover;
+    height: 500px; }
+    #app-container .my-header .room-me-logo {
+      top: 5%;
+      left: 7%;
+      height: 70px;
+      width: 70px; }
+    #app-container .my-header .hamburger-icon {
+      top: 5%;
+      left: 95%;
+      color: white; }
+      @media screen and (min-width: 768px) {
+        #app-container .my-header .hamburger-icon {
+          display: none; } }
+    #app-container .my-header .desktop-navs {
+      display: none; }
+      #app-container .my-header .desktop-navs button {
+        color: white; }
+      @media screen and (min-width: 768px) {
+        #app-container .my-header .desktop-navs {
+          display: block;
+          top: 5%;
+          left: 90%;
+          width: 20%; } }
+    #app-container .my-header h2 {
+      color: white;
+      margin-bottom: 20px; }
+      @media screen and (min-width: 768px) {
+        #app-container .my-header h2 {
+          font-size: 350%;
+          width: 50%;
+          margin: auto;
+          margin-bottom: 25px;
+          line-height: 125%; } }
+    #app-container .my-header h6 {
+      color: white;
+      margin-bottom: 15px; }
+      @media screen and (min-width: 768px) {
+        #app-container .my-header h6 {
+          font-size: 150%;
+          margin-bottom: 20px; } }
+    #app-container .my-header .search-bar {
+      width: 80%;
+      margin: auto; }
+      #app-container .my-header .search-bar .mobile-button {
+        height: 34px;
+        background: #5DC2D2;
+        color: white; }
+        #app-container .my-header .search-bar .mobile-button i {
+          margin-right: 15px;
+          margin-left: 15px; }
+        @media screen and (min-width: 768px) {
+          #app-container .my-header .search-bar .mobile-button {
+            display: none; } }
+      #app-container .my-header .search-bar .desktop-button {
+        display: none;
+        height: 34px;
+        background: #5DC2D2;
+        color: white; }
+        #app-container .my-header .search-bar .desktop-button i {
+          margin-right: 5px;
+          margin-left: 10px;
+          font-weight: 200; }
+        #app-container .my-header .search-bar .desktop-button p {
+          display: inline-block;
+          margin-right: 15px;
+          font-weight: 200; }
+        @media screen and (min-width: 768px) {
+          #app-container .my-header .search-bar .desktop-button {
+            display: inline-block; } }
+  #app-container .room-for-rent {
+    background: #5DC2D2;
+    height: 300px; }
+    @media screen and (min-width: 768px) {
+      #app-container .room-for-rent {
+        height: 200px; } }
+    #app-container .room-for-rent .my-content {
+      color: white;
+      top: 35%; }
+      @media screen and (min-width: 768px) {
+        #app-container .room-for-rent .my-content {
+          top: 45%; } }
+      #app-container .room-for-rent .my-content button {
+        background: #334050;
+        border: none;
+        color: #fff;
+        margin-top: 30px;
+        width: 25%; }
+        @media screen and (min-width: 768px) {
+          #app-container .room-for-rent .my-content button {
+            margin-top: 15px; } }
+    #app-container .room-for-rent .my-buildings {
+      height: 70%;
+      top: 100%;
+      left: 90%;
+      transform: translate(-50%, -100%); }
+      @media screen and (min-width: 768px) {
+        #app-container .room-for-rent .my-buildings {
+          left: 95%; } }
+  #app-container .roommate-finder {
+    background: #F5F5F5; }
+    @media screen and (min-width: 768px) {
+      #app-container .roommate-finder {
+        padding-top: 25px; } }
+    #app-container .roommate-finder h2 {
+      color: #5DC2D2;
+      margin-bottom: 10px; }
+    #app-container .roommate-finder p {
+      margin-bottom: 50px; }
+    #app-container .roommate-finder .three-step-process img {
+      width: 20%;
+      margin: auto; }
+    #app-container .roommate-finder .move-in {
+      border-top: 1px solid lightgrey;
+      padding-top: 15px; }
+      @media screen and (min-width: 768px) {
+        #app-container .roommate-finder .move-in {
+          border: none;
+          padding-top: 0px; } }
+  #app-container .recommend-us {
+    background: url(../images/happy-roomies-bg.jpg) center center no-repeat;
+    background-size: cover;
+    height: 400px; }
+    @media screen and (min-width: 768px) {
+      #app-container .recommend-us {
+        height: 250px; } }
+    #app-container .recommend-us h3 {
+      color: white;
+      margin-top: 80px;
+      font-weight: 200; }
+      @media screen and (min-width: 768px) {
+        #app-container .recommend-us h3 {
+          margin-top: 40px; } }
+    #app-container .recommend-us p {
+      color: white;
+      margin-bottom: 30px;
+      font-weight: 200; }
+    @media screen and (min-width: 768px) {
+      #app-container .recommend-us .annoying-search-bar {
+        width: 98%; } }
+    #app-container .recommend-us .mobile-button {
       height: 34px;
-      background: #5DC2D2; }
-#app-container .room-for-rent {
-  background: #5DC2D2;
-  height: 300px; }
-  #app-container .room-for-rent .my-content {
-    color: white;
-    top: 35%; }
-    #app-container .room-for-rent .my-content button {
+      background: #334050; }
+      @media screen and (min-width: 768px) {
+        #app-container .recommend-us .mobile-button {
+          display: none; } }
+    @media screen and (min-width: 768px) {
+      #app-container .recommend-us .running-out-of-names-for-things {
+        margin-top: 30px; } }
+    #app-container .recommend-us .desktop-button {
+      display: none;
+      color: white;
+      height: 34px;
+      background: #334050;
+      padding-right: 20px;
+      padding-left: 0px; }
+      @media screen and (min-width: 768px) {
+        #app-container .recommend-us .desktop-button {
+          display: inline-block; } }
+    #app-container .recommend-us h4 {
+      color: white;
+      font-weight: 200; }
+      @media screen and (min-width: 768px) {
+        #app-container .recommend-us h4 {
+          display: inline-block;
+          padding-right: 10px; } }
+    @media screen and (min-width: 768px) {
+      #app-container .recommend-us .icon-row {
+        display: inline-block;
+        width: 20%;
+        vertical-align: bottom; } }
+    @media screen and (min-width: 768px) {
+      #app-container .recommend-us .my-search-bar {
+        display: inline-block;
+        width: 40%; }
+        #app-container .recommend-us .my-search-bar span {
+          display: inline-block; } }
+    #app-container .recommend-us .icon-holder {
+      position: relative;
+      display: inline-block;
+      border-radius: 50%;
+      background: #5DC2D2;
+      height: 30px;
+      width: 30px;
+      margin-right: 5px;
+      margin-left: 5px; }
+      #app-container .recommend-us .icon-holder .icons {
+        color: white; }
+    #app-container .recommend-us .stupid-triangle-icon-that-i-cant-find {
+      color: white;
+      margin-left: 20px;
+      margin-right: 20px; }
+      @media screen and (min-width: 768px) {
+        #app-container .recommend-us .stupid-triangle-icon-that-i-cant-find {
+          margin-right: 8px; } }
+  #app-container .checkerboard-border {
+    margin: 0;
+    height: 10px;
+    background: url(../images/checkerboard.png) center center repeat; }
+    @media screen and (min-width: 768px) {
+      #app-container .checkerboard-border {
+        display: none; } }
+  #app-container .success-stories {
+    padding-bottom: 50px; }
+    @media screen and (min-width: 768px) {
+      #app-container .success-stories {
+        padding-top: 50px; } }
+    #app-container .success-stories h3 {
+      color: #5DC2D2;
+      margin-bottom: 20px; }
+      @media screen and (min-width: 768px) {
+        #app-container .success-stories h3 {
+          font-size: 300%; } }
+    #app-container .success-stories .special-p {
+      margin-bottom: 50px; }
+    #app-container .success-stories .our-success-stories {
+      padding-bottom: 20px; }
+      #app-container .success-stories .our-success-stories h4 {
+        color: #5DC2D2; }
+      #app-container .success-stories .our-success-stories img {
+        width: 20%;
+        margin: auto; }
+        @media screen and (min-width: 768px) {
+          #app-container .success-stories .our-success-stories img {
+            width: 40%; } }
+  #app-container .featured-rooms {
+    background: #FECA48;
+    padding-bottom: 50px; }
+    #app-container .featured-rooms .my-featured {
+      width: 60%; }
+      @media screen and (min-width: 768px) {
+        #app-container .featured-rooms .my-featured {
+          width: 100%;
+          padding-top: 40px;
+          padding-bottom: 20px; } }
+    #app-container .featured-rooms .each-feature {
+      margin-top: 25px; }
+      @media screen and (min-width: 768px) {
+        #app-container .featured-rooms .each-feature {
+          margin-top: 0px; } }
+    #app-container .featured-rooms p {
+      text-align: left;
+      padding-left: 20px; }
+    #app-container .featured-rooms .feature-image {
+      margin-bottom: 15px; }
+    #app-container .featured-rooms .user-image {
+      position: absolute;
+      top: 72.5%;
+      left: 80%;
+      border-radius: 50%;
+      height: 15%;
+      width: 15%;
+      border: 1px solid white; }
+    #app-container .featured-rooms .heart-icon {
+      position: absolute;
+      top: 10%;
+      left: 85%;
+      transform: translateX(-50%, -50%);
+      color: white;
+      font-size: 25px; }
+    #app-container .featured-rooms button {
       background: #334050;
       border: none;
       color: #fff;
-      margin-top: 30px;
-      width: 25%; }
-  #app-container .room-for-rent .my-buildings {
-    height: 70%;
-    top: 100%;
-    left: 90%;
-    transform: translate(-50%, -100%); }
-#app-container .roommate-finder {
-  background: #F5F5F5; }
-  #app-container .roommate-finder h2 {
-    color: #5DC2D2;
-    margin-bottom: 10px; }
-  #app-container .roommate-finder p {
-    margin-bottom: 50px; }
-  #app-container .roommate-finder .three-step-process img {
-    width: 20%;
-    margin: auto; }
-  #app-container .roommate-finder .move-in {
-    border-top: 1px solid lightgrey; }
-#app-container .recommend-us {
-  background: url(../images/happy-roomies-bg.jpg) center center no-repeat;
-  background-size: cover;
-  height: 400px; }
-  #app-container .recommend-us h3 {
-    color: white;
-    margin-top: 80px;
-    font-weight: 200; }
-  #app-container .recommend-us p {
-    color: white;
-    margin-bottom: 30px;
-    font-weight: 200; }
-  #app-container .recommend-us button {
-    height: 34px;
-    background: #334050; }
-  #app-container .recommend-us h4 {
-    color: white;
-    font-weight: 200; }
-  #app-container .recommend-us .icon-holder {
-    position: relative;
-    display: inline-block;
-    border-radius: 50%;
-    background: #5DC2D2;
-    height: 30px;
-    width: 30px;
-    margin-right: 5px;
-    margin-left: 5px; }
-    #app-container .recommend-us .icon-holder .icons {
-      color: white; }
-  #app-container .recommend-us .stupid-triangle-icon-that-i-cant-find {
-    color: white; }
-#app-container .success-stories {
-  padding-bottom: 50px; }
-  #app-container .success-stories h3 {
-    color: #5DC2D2;
-    margin-bottom: 20px; }
-  #app-container .success-stories .special-p {
-    margin-bottom: 50px; }
-  #app-container .success-stories .our-success-stories {
-    padding-bottom: 20px; }
-    #app-container .success-stories .our-success-stories h4 {
-      color: #5DC2D2; }
-    #app-container .success-stories .our-success-stories img {
-      width: 20%;
-      margin: auto; }
-#app-container .featured-rooms {
-  background: #FECA48;
-  padding-bottom: 50px; }
-  #app-container .featured-rooms .my-featured {
-    width: 60%; }
-  #app-container .featured-rooms .each-feature {
-    margin-top: 25px; }
-  #app-container .featured-rooms p {
-    text-align: left;
-    padding-left: 20px; }
-  #app-container .featured-rooms .feature-image {
-    margin-bottom: 15px; }
-  #app-container .featured-rooms .user-image {
-    position: absolute;
-    top: 72.5%;
-    left: 80%;
-    border-radius: 50%;
-    height: 15%;
-    width: 15%;
-    border: 1px solid white; }
-  #app-container .featured-rooms .heart-icon {
-    position: absolute;
-    top: 10%;
-    left: 85%;
-    transform: translateX(-50%, -50%);
-    color: white;
-    font-size: 25px; }
-  #app-container .featured-rooms button {
+      width: 45%; }
+      @media screen and (min-width: 768px) {
+        #app-container .featured-rooms button {
+          width: 25%; } }
+  #app-container .my-footer {
     background: #334050;
-    border: none;
-    color: #fff;
-    width: 45%; }
-#app-container .my-footer {
-  background: #334050;
-  padding-top: 20px; }
-  #app-container .my-footer button {
-    color: white; }
-  #app-container .my-footer img {
-    width: 20%;
-    margin: auto;
-    margin-top: 20px;
-    margin-bottom: 20px; }
-  #app-container .my-footer .icon-holder {
-    position: relative;
-    display: inline-block;
-    border-radius: 50%;
-    border: 1px solid white;
-    height: 25px;
-    width: 25px;
-    margin-right: 5px;
-    margin-left: 5px; }
-    #app-container .my-footer .icon-holder .icons {
+    padding-top: 20px; }
+    #app-container .my-footer button {
       color: white; }
-  #app-container .my-footer p {
-    color: white; }
+    #app-container .my-footer img {
+      width: 20%;
+      margin: auto;
+      margin-top: 20px;
+      margin-bottom: 20px; }
+    #app-container .my-footer .icon-holder {
+      position: relative;
+      display: inline-block;
+      border-radius: 50%;
+      border: 1px solid white;
+      height: 25px;
+      width: 25px;
+      margin-right: 5px;
+      margin-left: 5px; }
+      #app-container .my-footer .icon-holder .icons {
+        color: white; }
+    #app-container .my-footer p {
+      color: white; }
 
 /*# sourceMappingURL=styles.css.map */

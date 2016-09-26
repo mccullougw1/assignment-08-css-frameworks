@@ -1,5 +1,13 @@
 @import "./imports/_normalize.scss";
 
+$tablet-screen: 768px;
+// $desktop-screen: 992px;
+
+@mixin media-query($screen-size){
+   @media screen and (min-width: $screen-size){
+      @content;
+   }
+}
 
 *{ box-sizing: border-box }
 img {
@@ -8,6 +16,9 @@ img {
 }
 
 #app-container{
+   padding-left: 50px;
+   padding-right: 50px;
+
    .container {
       width: 100%;
       text-align: center;
@@ -36,23 +47,86 @@ img {
          top: 5%;
          left: 95%;
          color: white;
+
+         @include media-query($tablet-screen){
+                  display: none;
+         }
+      }
+
+      .desktop-navs {
+         display: none;
+
+         button {
+            color: white;
+         }
+
+         @include media-query($tablet-screen){
+                  display: block;
+                  top: 5%;
+                  left: 90%;
+                  width: 20%;
+         }
       }
 
       h2 {
          color: white;
          margin-bottom: 20px;
+
+         @include media-query($tablet-screen){
+                  font-size: 350%;
+                  width: 50%;
+                  margin: auto;
+                  margin-bottom: 25px;
+                  line-height: 125%;
+         }
       }
       h6 {
          color: white;
          margin-bottom: 15px;
+
+         @include media-query($tablet-screen){
+                  font-size: 150%;
+                  margin-bottom: 20px;
+         }
       }
       .search-bar {
          width: 80%;
          margin: auto;
 
-         .btn {
+         .mobile-button {
             height: 34px;
             background: #5DC2D2;
+            color: white;
+
+            i {
+               margin-right: 15px;
+               margin-left: 15px;
+            }
+
+            @include media-query($tablet-screen){
+                     display: none;
+            }
+         }
+         .desktop-button {
+            display: none;
+            height: 34px;
+            background: #5DC2D2;
+            color: white;
+
+            i {
+               margin-right: 5px;
+               margin-left: 10px;
+               font-weight: 200;
+            }
+            p {
+               display: inline-block;
+               margin-right: 15px;
+               font-weight: 200;
+            }
+
+            @include media-query($tablet-screen){
+                     display: inline-block;
+            }
          }
       }
    }
@@ -61,9 +135,17 @@ img {
       background: #5DC2D2;
       height: 300px;
 
+      @include media-query($tablet-screen){
+         height: 200px;
+      }
+
       .my-content {
          color: white;
          top: 35%;
+
+         @include media-query($tablet-screen){
+                  top: 45%;
+         }
 
          button {
             background: #334050;
@@ -71,6 +153,10 @@ img {
             color: #fff;
             margin-top: 30px;
             width: 25%;
+
+            @include media-query($tablet-screen){
+               margin-top: 15px;
+            }
          }
       }
 
@@ -79,11 +165,19 @@ img {
          top: 100%;
          left: 90%;
          transform: translate(-50%, -100%);
+
+         @include media-query($tablet-screen){
+            left: 95%;
+         }
       }
    }
 
    .roommate-finder {
       background: #F5F5F5;
+
+      @include media-query($tablet-screen){
+         padding-top: 25px;
+      }
 
       h2 {
          color: #5DC2D2;
@@ -95,6 +189,7 @@ img {
       }
 
       .three-step-process {
+
          img {
             width: 20%;
             margin: auto;
@@ -103,6 +198,12 @@ img {
 
       .move-in {
          border-top: 1px solid lightgrey;
+         padding-top: 15px;
+
+         @include media-query($tablet-screen){
+            border: none;
+            padding-top: 0px;
+         }
       }
    }
 
@@ -113,23 +214,85 @@ img {
       background-size: cover;
       height: 400px;
 
+      @include media-query($tablet-screen){
+         height: 250px;
+      }
+
       h3 {
          color: white;
          margin-top: 80px;
          font-weight: 200;
+
+         @include media-query($tablet-screen){
+            margin-top: 40px;
+         }
       }
       p {
          color: white;
          margin-bottom: 30px;
          font-weight: 200;
       }
-      button {
+      .annoying-search-bar {
+         @include media-query($tablet-screen){
+            width: 98%;
+         }
+      }
+
+
+      .mobile-button {
          height: 34px;
          background: #334050;
+
+         @include media-query($tablet-screen){
+            display: none;
+         }
+      }
+
+      .running-out-of-names-for-things {
+         @include media-query($tablet-screen){
+            margin-top: 30px;
+         }
+      }
+
+      .desktop-button {
+         display: none;
+         color: white;
+         height: 34px;
+         background: #334050;
+         padding-right: 20px;
+         padding-left: 0px;
+
+         @include media-query($tablet-screen){
+            display: inline-block;
+         }
       }
       h4 {
          color: white;
          font-weight: 200;
+
+         @include media-query($tablet-screen){
+            display: inline-block;
+            padding-right: 10px;
+         }
+      }
+
+      .icon-row {
+         @include media-query($tablet-screen){
+            display: inline-block;
+            width: 20%;
+            vertical-align: bottom;
+         }
+      }
+
+      .my-search-bar {
+         @include media-query($tablet-screen){
+            display: inline-block;
+            width: 40%;
+
+            span {
+               display: inline-block;
+            }
+         }
       }
       .icon-holder {
          position: relative;
@@ -147,17 +310,41 @@ img {
       }
       .stupid-triangle-icon-that-i-cant-find {
          color: white;
+         margin-left: 20px;
+         margin-right: 20px;
+
+         @include media-query($tablet-screen){
+            margin-right: 8px;
+         }
       }
 
 
    }
 
+   .checkerboard-border {
+      margin: 0;
+      height: 10px;
+      background: url(../images/checkerboard.png) center center repeat;
+
+      @include media-query($tablet-screen){
+         display: none;
+      }
+   }
+
    .success-stories {
       padding-bottom: 50px;
+
+      @include media-query($tablet-screen){
+         padding-top: 50px;
+      }
 
       h3 {
          color: #5DC2D2;
          margin-bottom: 20px;
+
+         @include media-query($tablet-screen){
+            font-size: 300%;
+         }
       }
       .special-p {
          margin-bottom: 50px;
@@ -173,6 +360,10 @@ img {
          img {
             width: 20%;
             margin: auto;
+
+            @include media-query($tablet-screen){
+               width: 40%;
+            }
          }
       }
    }
@@ -183,9 +374,19 @@ img {
 
       .my-featured {
          width: 60%;
+
+         @include media-query($tablet-screen){
+            width: 100%;
+            padding-top: 40px;
+            padding-bottom: 20px;
+         }
       }
       .each-feature {
          margin-top: 25px;
+
+         @include media-query($tablet-screen){
+            margin-top: 0px;
+         }
       }
 
       p {
@@ -217,6 +418,10 @@ img {
          border: none;
          color: #fff;
          width: 45%;
+
+         @include media-query($tablet-screen){
+            width: 25%;
+         }
       }
    }
 
