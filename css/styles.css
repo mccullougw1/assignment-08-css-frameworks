@@ -384,15 +384,27 @@ img {
   background: url(../images/roomies-eating-together-bg.jpg) center center no-repeat;
   background-size: cover;
   height: 500px; }
+  #app-container .my-header .room-me-logo {
+    top: 5%;
+    left: 7%;
+    height: 70px;
+    width: 70px; }
+  #app-container .my-header .hamburger-icon {
+    top: 5%;
+    left: 95%;
+    color: white; }
   #app-container .my-header h2 {
     color: white;
     margin-bottom: 20px; }
   #app-container .my-header h6 {
     color: white;
     margin-bottom: 15px; }
-  #app-container .my-header .input-group .btn {
-    height: 34px;
-    background: #5DC2D2; }
+  #app-container .my-header .search-bar {
+    width: 80%;
+    margin: auto; }
+    #app-container .my-header .search-bar .btn {
+      height: 34px;
+      background: #5DC2D2; }
 #app-container .room-for-rent {
   background: #5DC2D2;
   height: 300px; }
@@ -402,7 +414,14 @@ img {
     #app-container .room-for-rent .my-content button {
       background: #334050;
       border: none;
-      color: #fff; }
+      color: #fff;
+      margin-top: 30px;
+      width: 25%; }
+  #app-container .room-for-rent .my-buildings {
+    height: 70%;
+    top: 100%;
+    left: 90%;
+    transform: translate(-50%, -100%); }
 #app-container .roommate-finder {
   background: #F5F5F5; }
   #app-container .roommate-finder h2 {
@@ -418,22 +437,32 @@ img {
 #app-container .recommend-us {
   background: url(../images/happy-roomies-bg.jpg) center center no-repeat;
   background-size: cover;
-  height: 500px; }
+  height: 400px; }
   #app-container .recommend-us h3 {
-    color: white; }
+    color: white;
+    margin-top: 80px;
+    font-weight: 200; }
   #app-container .recommend-us p {
-    color: white; }
+    color: white;
+    margin-bottom: 30px;
+    font-weight: 200; }
   #app-container .recommend-us button {
     height: 34px;
     background: #334050; }
   #app-container .recommend-us h4 {
-    color: white; }
-  #app-container .recommend-us .icons {
-    border-radius: 50%;
     color: white;
+    font-weight: 200; }
+  #app-container .recommend-us .icon-holder {
+    position: relative;
+    display: inline-block;
+    border-radius: 50%;
     background: #5DC2D2;
-    height: 20px;
-    width: 20px; }
+    height: 30px;
+    width: 30px;
+    margin-right: 5px;
+    margin-left: 5px; }
+    #app-container .recommend-us .icon-holder .icons {
+      color: white; }
   #app-container .recommend-us .stupid-triangle-icon-that-i-cant-find {
     color: white; }
 #app-container .success-stories {
@@ -480,7 +509,8 @@ img {
   #app-container .featured-rooms button {
     background: #334050;
     border: none;
-    color: #fff; }
+    color: #fff;
+    width: 45%; }
 #app-container .my-footer {
   background: #334050;
   padding-top: 20px; }
@@ -491,12 +521,17 @@ img {
     margin: auto;
     margin-top: 20px;
     margin-bottom: 20px; }
-  #app-container .my-footer .icons {
-    color: white;
+  #app-container .my-footer .icon-holder {
+    position: relative;
+    display: inline-block;
     border-radius: 50%;
     border: 1px solid white;
-    height: 5%;
-    width: 5%; }
+    height: 25px;
+    width: 25px;
+    margin-right: 5px;
+    margin-left: 5px; }
+    #app-container .my-footer .icon-holder .icons {
+      color: white; }
   #app-container .my-footer p {
     color: white; }
 
